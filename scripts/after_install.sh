@@ -17,7 +17,7 @@ install requirements.txt
 pip install -r /home/ubuntu/swepo/requirements.txt
 
 # migrate DB
-python manage.py migrate
+python app/manage.py migrate
 
 # run server
-screen -d -m python3 manage.py runserver 0:8000
+screen -d -m python3 app/manage.py runserver 0:8000
