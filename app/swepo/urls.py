@@ -22,4 +22,5 @@ from company_assistant import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('company/', include('company_assistant.urls')),
+    path('', views.home),
 ]
