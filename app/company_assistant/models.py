@@ -14,18 +14,6 @@ class Employer(models.Model):
     Represents a company's employer which has access to process assessments
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="employer")
-    first_name = models.CharField(max_length=30, blank=False)
-    last_name = models.CharField(max_length=30, blank=False)
-
-
-class Company(models.Model):
-    """
-    An object which used to evaluate processes capability of working company 
-    """
-    name = models.CharField(max_length=30, blank=False)
-    description = models.TextField(max_length=500, default="")
-    created_by = models.ForeignKey(Employer, related_name="creted_companies", on_delete=models.DO_NOTHING)
-    followers = models.ManyToManyField(Employer, related_name="followed_companies", blank=True)
 
 
 class ProcessCategory(models.Model):
@@ -49,6 +37,17 @@ class ProcessPractice(models.Model):
 class Specific(models.Model):
     name = models.CharField(max_length=50, unique=True)
     description = models.TextField(max_length=500, default="", blank=True)
+
+
+class Company(models.Model):
+    """
+    An object which used to evaluate processes capability of working company 
+    """
+    name = models.CharField(max_length=30, blank=False)
+    description = models.TextField(max_length=500, default="")
+    created_by = models.ForeignKey(Employer, related_name="creted_companies", on_delete=models.DO_NOTHING)
+    followers = models.ManyToManyField(Employer, related_name="followed_companies", blank=True)
+    specifics = models.ManyToManyField(Specific, through="CompanySpecific", blank=True)
 
 
 class CompanySpecific(models.Model):
