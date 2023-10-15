@@ -5,6 +5,10 @@ files:
     destination: /home/ubuntu/swepo
 hooks:
   BeforeInstall:
-      - location: scripts/before_install.sh
+    - location: scripts/before_install.sh
   AfterInstall:
-      - location: scripts/after_install.sh
+    - location: scripts/after_install.sh
+  PreDeploy:
+    - location: scripts/pre_deploy.sh
+  Deploy:
+    - location: scripts/deploy.sh

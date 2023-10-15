@@ -1,0 +1,1059 @@
+{
+    "5.2 CON.1 Change management.": {
+        "process_id": "CON.1",
+        "name": "Change management",
+        "purpose": "The purpose of the change management process is to ensure all changes are assessed, approved implemented and reviewed in a controlled manner.",
+        "outcomes": [
+            "1. change requests are recorded and classified;",
+            "2. change requests are assessed using defined criteria;",
+            "3. change requests are approved before changes are developed and deployed;",
+            "4. an implementation schedule of changes and releases is established;",
+            "5. an implementation schedule of changes and releases is communicated to interested parties;",
+            "6. approved changes are developed and tested;",
+            "7. unsuccessful changes are reversed or remedied."
+        ],
+        "practices": [
+            "CON.1.1 Record change requests. Changes to the services, service components, service requirements catalogue of services, service level agreements and other documented agreements are recorde and classified. [Outcome 1]",
+            "CON.1.2 Assess change requests. Requests for change are assessed to identify: a) new or change information security risks; b) potential impact on the existing information security policy an controls, and the impact of requests for change on releases and plans for deployment. [Outcom 2]",
+            "CON.1.3 Make decisions on change requests. The service provider and interested parties mak decisions on the acceptance of requests for change. Decision-making takes into consideratio the risks, the potential impacts to services and the customer, service requirements, busines benefits, technical feasibility and financial impact. [Outcome 3]",
+            "CON.1.4 Establish an implementation schedule of changes and releases. Establish a schedule o change containing details of the approved changes and their proposed deployment dates. Planning is coordinated with the change management process and includes references to th related requests for change, known errors and problems which are being closed through thi release. [Outcome 4]",
+            "CON.1.5 Communicate an implementation schedule of changes and releases. Communicate schedule containing details of the approved changes and their proposed deployment dates t interested parties. [Outcome 5]",
+            "CON.1.6 Develop and test approved changes. Approved changes are developed and tested. [Outcom 6]",
+            "CON.1.7 Reverse or remedy unsuccessful changes. The change is reversed or remedied i unsuccessful. [Outcome 7]"
+        ],
+        "inputs": [
+            "04-06 Change of services provision cost estimates [Outcome 2]",
+            "11-01 Change request [Outcome 1,2]",
+            "03-03 Change request classification criteria [Outcome 1]",
+            "03-04 Change request evaluation criteria [Outcome 2]",
+            "04-07 Change schedule [Outcome 5,6]",
+            "02-10 Change schedule communication list [Outcome 5]",
+            "09-08 Configuration item status report [Outcome 2]",
+            "03-14 Information security change request evaluation criteria [Outcome 2]",
+            "02-29 Release log [Outcome 2]",
+            "09-00 Report [Outcome 3]",
+            "04-20 Reversing unsuccessful changes plan [Outcome 7]",
+            "04-26 Services provision budget [Outcome 2]"
+        ],
+        "outputs": [
+            "08-02 Approval record [Outcome 3]",
+            "08-11 Change request record [Outcome 1]",
+            "04-07 Change schedule [Outcome 4]",
+            "08-13 Communication record [Outcome 5]",
+            "02-15 Implemented changes log [Outcome 6]",
+            "11-07 New or changed service request [Outcome 6]",
+            "04-18 Release schedule [Outcome 4]",
+            "09-00 Report [Outcome 2]"
+        ]
+    },
+    "5.3 CON.2 Configuration management.": {
+        "process_id": "CON.2",
+        "name": "Configuration management",
+        "purpose": "The purpose of the configuration management process is to establish and maintain the integrity of al identified service components.",
+        "outcomes": [
+            "1. items requiring configuration management are identified;",
+            "2. the status of configuration items and modifications are recorded and reported;",
+            "3. changes to items under configuration management are controlled;",
+            "4. the integrity of systems, services and service components is assured;",
+            "5. the configuration of released items is controlled."
+        ],
+        "practices": [
+            "CON.2.1 Identify configuration items. Configuration items are uniquely identified. [Outcome 1]",
+            "CON.2.2 Record configuration item status. The information recorded for each configuration item (CI ensures effective control and includes at least: a) description of the CI; b) relationship(s) betwee the CI and other CIs; c) relationship(s) between the CI and service components; d) status; e version; f) location; g) associated requests for change; h) associated problems and known errors. [Outcome 2]",
+            "CON.2.3 Changes to configuration items are controlled. All requests for change to configuration item defined in the change management policy are managed using the change management process. The configuration management database records are updated following the successfu deployment of changes. [Outcome 3]",
+            "CON.2.4 Assure the integrity of systems, services and service components. Configuration contro procedures ensure that the integrity of services and service components is maintained. Th service provider audits the records stored in the configuration management database. Change to configuration items are traceable and auditable to ensure integrity of the configuration item and the data in the configuration management database. [Outcome 4]",
+            "CON.2.5 Control the configuration of released items. A configuration baseline of the affecte configuration items is taken before deployment of a release into the live environment. Maste copies of the configuration items recorded in the configuration management database are store in secure physical or electronic libraries referenced by the configuration records. This includes a least documentation, licence information, software and, where available, images of the hardwar configuration. [Outcome 5]"
+        ],
+        "inputs": [
+            "08-11 Change request record [Outcome 3]",
+            "04-08 Configuration item audit schedule [Outcome 4]",
+            "02-11 Configuration item change log [Outcome 2,4]",
+            "08-15 Configuration item record [Outcome 2,3,4]",
+            "02-12 Configuration item report user communication list [Outcome 2]",
+            "09-08 Configuration item status report [Outcome 2,3]",
+            "03-32 Release notes [Outcome 5]",
+            "01-01 Service level agreement [Outcome 1]",
+            "01-02 Supplier agreement [Outcome 1]"
+        ],
+        "outputs": [
+            "08-13 Communication record [Outcome 2]",
+            "08-14 Configuration item archive [Outcome 5]",
+            "09-07 Configuration item audit report [Outcome 4]",
+            "02-11 Configuration item change log [Outcome 3]",
+            "08-15 Configuration item record [Outcome 1]",
+            "09-08 Configuration item status report [Outcome 2]"
+        ]
+    },
+    "5.4 CON.3 Release and deployment management.": {
+        "process_id": "CON.3",
+        "name": "Release and deployment management",
+        "purpose": "The purpose of the release and deployment management process is to deploy releases into the liv environment in a controlled manner.",
+        "outcomes": [
+            "1. requirements for releases are established and agreed with interested parties;",
+            "2. releases of services and service components are planned;",
+            "3. releases are designed;",
+            "4. releases are tested prior to deployment;",
+            "5. approved releases are deployed;",
+            "6. integrity of hardware, software, and other service components is assured during deployment of th release.",
+            "7. unsuccessfully deployed releases are reversed or remedied;",
+            "8. release information is communicated to interested parties."
+        ],
+        "practices": [
+            "CON.3.1 Establish requirements for releases. Requirements for releases are established and agree with interested parties. [Outcome 1]",
+            "CON.3.2 Plan releases of services or service components. Plan releases of services and servic components. [Outcome 2]",
+            "CON.3.3 Design releases. Releases are designed. [Outcome 3]",
+            "CON.3.4 Test releases. Releases are tested prior to deployment. [Outcome 4]",
+            "CON.3.5 Deploy releases. Approved releases are deployed. [Outcome 5]",
+            "CON.3.6 Assure integrity of hardware, software, and other service components during deploymen of the release. The release is deployed into the live environment so that the integrity o hardware, software and other service components is maintained during deployment of th release. [Outcome 6]",
+            "CON.3.7 Reverse or remedy unsuccessful releases. Unsuccessfully deployed releases are reversed o remedied. [Outcome 7]",
+            "CON.3.8 Communicate release information to interested parties. Communicate release information t interested parties. [Outcome 8]"
+        ],
+        "inputs": [
+            "04-01 Acceptance test environment plan [Outcome 4]",
+            "04-07 Change schedule [Outcome 2]",
+            "12-06 Release acceptance test case [Outcome 4]",
+            "03-31 Release acceptance test criteria [Outcome 3,4]",
+            "02-29 Release log [Outcome 8]",
+            "04-16 Release plan [Outcome 3,5,6]",
+            "04-17 Release reversal arrangements plan [Outcome 7]",
+            "04-18 Release schedule [Outcome 8]",
+            "02-31 Release stakeholder communication list [Outcome 8]",
+            "04-20 Reversing unsuccessful changes plan [Outcome 6]"
+        ],
+        "outputs": [
+            "04-01 Acceptance test environment plan [Outcome 2]",
+            "08-02 Approval record [Outcome 4,5]",
+            "08-13 Communication record [Outcome 8]",
+            "12-06 Release acceptance test case [Outcome 3]",
+            "03-31 Release acceptance test criteria [Outcome 1]",
+            "09-27 Release acceptance test report [Outcome 4]",
+            "02-29 Release log [Outcome 5,6,7]",
+            "04-16 Release plan [Outcome 2]",
+            "04-17 Release reversal arrangements plan [Outcome 2]",
+            "04-18 Release schedule [Outcome 2]",
+            "04-19 Removal of services plan [Outcome 2]",
+            "04-20 Reversing unsuccessful changes plan [Outcome 2]",
+            "08-52 Review record [Outcome 4]"
+        ]
+    },
+    "5.5 DTR.1 Service requirements.": {
+        "process_id": "DTR.1",
+        "name": "Service requirements",
+        "purpose": "The purpose of the service requirements process is to establish and agree the service requirements.",
+        "outcomes": [
+            "1. the required characteristics and context of use of new or changed services are identified;",
+            "2. the constraints for a service solution are defined;",
+            "3. the requirements for the new or changed service are defined;",
+            "4. the requirements for validating the new or changed service are defined;",
+            "5. requirements for the new or changed service that are to be implemented are negotiated;"
+        ],
+        "practices": [
+            "DTR.1.1 Identify the required characteristics and contexts of use. The required characteristics an context of use of new or changed services are identified. [Outcome 1]",
+            "DTR.1.2 Identify the constraints for a service solution. The constraints for a service solution ar defined. [Outcome 2]",
+            "DTR.1.3 Define the requirements for the new or changed service. The requirements for the new o changed service are defined. [Outcome 3]",
+            "DTR.1.4 Define the validation requirements for the new or changed service. The requirements fo validating the new or changed service are defined. [Outcome 4]",
+            "DTR.1.5 Negotiate the acceptance of the requirements for the new or changed service. Requirements for the new or changed service that are to be implemented are negotiated. [Outcome 5]"
+        ],
+        "inputs": [
+            "11-07 New or changed service request [Outcome 1]",
+            "08-41 New or changed service request record [Outcome 2]",
+            "12-04 New or changed service requirements [Outcome 5]"
+        ],
+        "outputs": [
+            "09-21 New or changed service evaluation report [Outcome 2]",
+            "08-41 New or changed service request record [Outcome 1]",
+            "12-04 New or changed service requirements [Outcome 3]"
+        ]
+    },
+    "5.6 DTR.2 Service design.": {
+        "process_id": "DTR.2",
+        "name": "Service design",
+        "purpose": "The purpose of the service design process is to design and develop new or changed services.",
+        "outcomes": [
+            "1. new or changed services are designed to meet agreed business needs and customer requirements;",
+            "2. a service specification is prepared that defines the attributes of the new or changed service;",
+            "3. infrastructure and service components to support the designed service are specified;",
+            "4. new or changed services are developed that satisfy the criteria identified in the service specification."
+        ],
+        "practices": [
+            "DTR.2.1 Design new or changed service. New or changed services are designed to meet agree business needs and customer requirements. [Outcome 1]",
+            "DTR.2.2 Prepare a service specification. A service specification is prepared that defines the attributes o the new or changed service. [Outcome 2]",
+            "DTR.2.3 Specify infrastructure and support components. Infrastructure and service components t support the designed service are specified. [Outcome 3]",
+            "DTR.2.4 Develop new or changed service. New or changed services are developed that satisfy th criteria identified in the service specification. [Outcome 4]"
+        ],
+        "inputs": [
+            "03-26 New or changed service design [Outcome 2,3]",
+            "04-15 New or changed service plan [Outcome 2,3]",
+            "12-04 New or changed service requirements [Outcome 1]",
+            "12-05 New or changed service specification [Outcome 4]",
+            "04-19 Removal of services plan [Outcome 2]",
+            "12-11 Service requirements [Outcome 1]"
+        ],
+        "outputs": [
+            "03-26 New or changed service design [Outcome 1]",
+            "07-02 New or changed service realisation [Outcome 4]",
+            "12-05 New or changed service specification [Outcome 2,3]"
+        ]
+    },
+    "5.7 DTR.3 Service transition.": {
+        "process_id": "DTR.3",
+        "name": "Service transition",
+        "purpose": "The purpose of the service transition process is to make the new or changed services operational an includes the build, test and acceptance of the new or changed services.",
+        "outcomes": [
+            "1. requirements for service transition are identified;",
+            "2. the new or changed service is deployed and tested according to the service specification;",
+            "3. the new or changed service is accepted in accordance with the service acceptance criteria;",
+            "4. information regarding the outcome of the transitioning of new or changed service is communicated t interested parties."
+        ],
+        "practices": [
+            "DTR.3.1 Identify service transition requirements. Requirements for service transition are identified. [Outcome 1]",
+            "DTR.3.2 Deploy new or changed service. The new or changed service is deployed and tested accordin to the service specification. [Outcome 2]",
+            "DTR.3.3 Accept new or changed service. The new or changed service is accepted in accordance wit the service acceptance criteria. [Outcome 3]",
+            "DTR.3.4 Communicate outcomes of transitioning of new or changed service. Communicat information regarding the outcome of the transitioning of new or changed service to intereste parties. [Outcome 4]"
+        ],
+        "inputs": [
+            "11-07 New or changed service request [Outcome 1]",
+            "08-42 New or changed services acceptance record [Outcome 4]",
+            "03-28 New or changed services test criteria [Outcome 2]",
+            "09-23 New or changed services test report [Outcome 3]",
+            "02-42 Services stakeholder communication list [Outcome 4]"
+        ],
+        "outputs": [
+            "08-13 Communication record [Outcome 4]",
+            "12-04 New or changed service requirements [Outcome 1]",
+            "08-42 New or changed services acceptance record [Outcome 3]",
+            "09-23 New or changed services test report [Outcome 2]",
+            "08-43 New or changed services test verification record [Outcome 2]",
+            "12-11 Service requirements [Outcome 1]"
+        ]
+    },
+    "5.8 DTR.4 Service planning.": {
+        "process_id": "DTR.4",
+        "name": "Service planning",
+        "purpose": "The purpose of the service planning process is to plan the provision of a new or changed service.",
+        "outcomes": [
+            "1. the scope of the work for provision of new or changed services is defined;",
+            "2. the feasibility of achieving the requirements of the new or changed service with available resource and constraints is assessed;",
+            "3. the tasks and resources necessary to complete the work are estimated;",
+            "4. interfaces between organizational units and external parties are identified;",
+            "5. plans for the provision of the new or changed service are developed."
+        ],
+        "practices": [
+            "DTR.4.1 Define the scope of the work for provision of new or changed services. The scope of th work for provision of new or changed services is defined. [Outcome 1]",
+            "DTR.4.2 Assess the feasibility of achieving the requirements of the new or changed service. Th feasibility of achieving the requirements of the new or changed service with available resource and constraints is assessed. [Outcome 2]",
+            "DTR.4.3 Estimate the tasks and resources. The tasks and resources necessary to complete the wor are sized and estimated. [Outcome 3]",
+            "DTR.4.4 Identify the interfaces between organizational units and external parties. Interfaces betwee organizational units and external parties are identified. [Outcome 4]",
+            "DTR.4.5 Develop plans for the provision of the new or changed services. Plans for the provision o the new or changed service are developed. [Outcome 5]"
+        ],
+        "inputs": [
+            "04-07 Change schedule [Outcome 5]",
+            "11-07 New or changed service request [Outcome 1]",
+            "03-27 New or changed services impact evaluation criteria [Outcome 2]",
+            "04-18 Release schedule [Outcome 5]",
+            "12-11 Service requirements [Outcome 2,3,4,5]",
+            "02-41 Service stakeholder list [Outcome 4]",
+            "04-26 Services provision budget [Outcome 3,5]",
+            "02-45 Supplier role assignments list [Outcome 4]"
+        ],
+        "outputs": [
+            "04-15 New or changed service plan [Outcome 4,5]",
+            "09-22 New or changed services impact evaluation report [Outcome 2]",
+            "03-43 Service management resource needs [Outcome 3]",
+            "12-11 Service requirements [Outcome 1]"
+        ]
+    },
+    "5.9 REL.1 Business relationship management.": {
+        "process_id": "REL.1",
+        "name": "Business relationship management",
+        "purpose": "The purpose of the business relationship management process is to identify and manage customer need and expectations.",
+        "outcomes": [
+            "1. customers and interested parties are identified;",
+            "2. the needs and expectations of customers are identified and monitored;",
+            "3. communication with the customer is planned and implemented;",
+            "4. service performance is monitored;",
+            "5. changes to the scope of the services, service level agreements and contracts are identified;",
+            "6. service complaints are recorded and managed through their life cycle to closure;",
+            "7. service complaints which are not resolved through normal channels are escalated;",
+            "8. customer satisfaction is measured and analysed;",
+            "9. customer satisfaction analysis results are communicated to interested parties."
+        ],
+        "practices": [
+            "REL.1.1 Identify customers and interested parties. The service provider identifies the customer, user and interested parties of the services. [Outcome 1]",
+            "REL.1.2 Identify and monitor the needs and expectations of customers. Promote the understandin of the business environment in which the services operate and requirements for new or change services by establishing a communication mechanism. This information enables the servic provider to prepare to respond to these requirements. [Outcome 2]",
+            "REL.1.3 Plan and implement communication with the customer. For each customer, the servic provider has a designated individual who is responsible for managing the customer relationshi and customer satisfaction. [Outcome 3]",
+            "REL.1.4 Monitor service performance. The service provider monitors performance of the service agains agreed service targets and other agreed commitments. [Outcome 4]",
+            "REL.1.5 Identify changes to the scope of the services, service level agreements and contracts. Identify changes to the scope of services, service level agreements and contracts. [Outcome 5]",
+            "REL.1.6 Record and manage service complaints through their life cycle to closure. The servic provider records, investigates, acts upon, reports and closes service complaints. [Outcome 6]",
+            "REL.1.7 Escalate service complaints which are not resolved through normal channels. Where service complaint is not resolved through the normal channels, escalation is provided to th customer. [Outcome 7]",
+            "REL.1.8 Measure and analyse customer satisfaction. The service provider measures custome satisfaction based on a representative sample from the customer and users of the services. [Outcome 8]",
+            "REL.1.9 Communicate customer satisfaction analysis results to interested parties. Custome satisfaction analysis results are communicated to interested parties. [Outcome 9]"
+        ],
+        "inputs": [
+            "08-11 Change request record [Outcome 5]",
+            "03-06 Customer satisfaction assessment instrument [Outcome 8]",
+            "08-17 Customer satisfaction review record [Outcome 9]",
+            "04-09 Customer satisfaction sampling schedule [Outcome 8]",
+            "03-43 Service management resource needs [Outcome 7]",
+            "03-44 Service management roles and responsibilities [Outcome 7]",
+            "02-37 Service provider role assignments list [Outcome 7]",
+            "02-38 Service provision complaint log [Outcome 7]",
+            "08-75 Service provision complaint record [Outcome 6,7]",
+            "04-25 Service provision review schedule [Outcome 4]",
+            "12-11 Service requirements [Outcome 1,2,5]",
+            "02-41 Service stakeholder list [Outcome 2,3]"
+        ],
+        "outputs": [
+            "11-01 Change request [Outcome 5]",
+            "08-13 Communication record [Outcome 9]",
+            "03-05 Customer needs and expectations [Outcome 2]",
+            "08-17 Customer satisfaction review record [Outcome 4,8]",
+            "03-11 Improvement opportunity [Outcome 4]",
+            "08-52 Review record [Outcome 4]",
+            "02-37 Service provider role assignments list [Outcome 3]",
+            "09-39 Service provision complaint disposition report [Outcome 6,7]",
+            "02-38 Service provision complaint log [Outcome 6]",
+            "02-41 Service stakeholder list [Outcome 1]"
+        ]
+    },
+    "5.10 REL.2 Supplier management.": {
+        "process_id": "REL.2",
+        "name": "Supplier management",
+        "purpose": "The purpose of the supplier management process is to ensure supplier services are integrated into servic delivery to meet the agreed requirements.",
+        "outcomes": [
+            "1. relationships between the service provider and suppliers are managed;",
+            "2. services to be provided are negotiated with each supplier;",
+            "3. roles and relationships between suppliers are determined;",
+            "4. the capability of subcontracted suppliers to meet obligations is confirmed;",
+            "5. supplier obligations to meet service requirements are monitored;",
+            "6. supplier performance against agreed criteria is monitored."
+        ],
+        "practices": [
+            "REL.2.1 Identify contributors to service provision. The service provider identifies other parties who wil contribute to the provision of service components for the new or changed services. [Outcome 1]",
+            "REL.2.2 Negotiate services with each supplier. Services to be provided are negotiated with eac supplier. [Outcome 2]",
+            "REL.2.3 Determine roles and relationships. Roles and relationships between suppliers are determined. [Outcome 3]",
+            "REL.2.4 Confirm capability of subcontracted suppliers. The capability of subcontracted suppliers t meet obligations is confirmed. [Outcome 4]",
+            "REL.2.5 Monitor supplier obligations to meet service requirements. Supplier obligations to mee service requirements are monitored. [Outcome 5]",
+            "REL.2.6 Monitor supplier performance. Supplier performance against agreed criteria is monitored. [Outcome 6]"
+        ],
+        "inputs": [
+            "08-11 Change request record [Outcome 5,6]",
+            "03-43 Service management resource needs [Outcome 1,2]",
+            "02-37 Service provider role assignments list [Outcome 1]",
+            "01-02 Supplier agreement [Outcome 4,5,6]",
+            "04-28 Supplier agreement review schedule [Outcome 5]",
+            "02-43 Supplier performance data [Outcome 6]",
+            "03-53 Supplier performance evaluation criteria [Outcome 6]",
+            "02-45 Supplier role assignments list [Outcome 3]"
+        ],
+        "outputs": [
+            "11-01 Change request [Outcome 6]",
+            "09-00 Report [Outcome 6]",
+            "08-52 Review record [Outcome 5]",
+            "03-51 Sub-contracted supplier roles and responsibilities [Outcome 3]",
+            "01-02 Supplier agreement [Outcome 2]",
+            "08-88 Supplier capability assessment record [Outcome 4]",
+            "02-45 Supplier role assignments list [Outcome 1]"
+        ]
+    },
+    "5.11 RES.1 Incident management.": {
+        "process_id": "RES.1",
+        "name": "Incident management",
+        "purpose": "The purpose of the incident management process is to restore agreed service within agreed service levels.",
+        "outcomes": [
+            "1. incidents are recorded and classified;",
+            "2. incidents are prioritised and analysed;",
+            "3. incidents are resolved and closed;",
+            "4. incidents which are not progressed according to agreed service levels are escalated;",
+            "5. information regarding the status and progress of reported incidents is communicated to intereste parties."
+        ],
+        "practices": [
+            "RES.1.1 Record and classify incidents. Incidents are recorded and classified with an appropriat priority. Major incidents are distinguished from other types of incidents by the appropriat assignment of status. [Outcome 1]",
+            "RES.1.2 Prioritize and analyse incidents. Incidents are prioritised and analysed, taking into account th impact and urgency of the incident or service request. [Outcome 2]",
+            "RES.1.3 Resolve and close incidents. Incidents are resolved and closed. [Outcome 3]",
+            "RES.1.4 Escalate incidents as appropriate. Escalate incidents which are not progressed according t agreed service levels. [Outcome 4]",
+            "RES.1.5 Report incident status and progress. Communicate information regarding the status an progress of incidents to interested parties. [Outcome 5]"
+        ],
+        "inputs": [
+            "08-22 Incident [Outcome 1]",
+            "08-23 Incident disposition record [Outcome 2,3,4,5]",
+            "11-06 Information security incident request [Outcome 1]",
+            "02-29 Release log [Outcome 2]"
+        ],
+        "outputs": [
+            "08-13 Communication record [Outcome 5]",
+            "08-23 Incident disposition record [Outcome 1,2,3,4]",
+            "08-24 Incident record [Outcome 1]"
+        ]
+    },
+    "5.12 RES.2 Service request management.": {
+        "process_id": "RES.2",
+        "name": "Service request management",
+        "purpose": "The purpose of the service request management process is to fulfil service requests within agreed servic levels.",
+        "outcomes": [
+            "1. service requests are recorded and classified;",
+            "2. service requests are prioritised and analysed;",
+            "3. service requests are resolved and closed;",
+            "4. service requests which are not progressed according to agreed service levels are escalated;",
+            "5. information regarding the status and progress of service requests is communicated to intereste parties."
+        ],
+        "practices": [
+            "RES.2.1 Record and classify service requests. Service requests are recorded and classified with a appropriate priority. [Outcome 1]",
+            "RES.2.2 Prioritize and analyse service requests. Service requests are prioritised and analysed, takin into account the impact and urgency of the service request. [Outcome 2]",
+            "RES.2.3 Resolve and close service requests. Service requests are resolved and closed. [Outcome 3]",
+            "RES.2.4 Escalate service requests as appropriate. Escalate service requests which are not progresse according to agreed service levels. [Outcome 4]",
+            "RES.2.5 Report service request status and progress. Communicate information regarding the statu and progress of service requests to interested parties. [Outcome 5]"
+        ],
+        "inputs": [
+            "11-15 Service request [Outcome 1]",
+            "08-80 Service request disposition record [Outcome 2,3,4,5]"
+        ],
+        "outputs": [
+            "08-13 Communication record [Outcome 5]",
+            "08-80 Service request disposition record [Outcome 1,2,3,4]",
+            "08-81 Service request record [Outcome 1]"
+        ]
+    },
+    "5.13 RES.3 Problem management.": {
+        "process_id": "RES.3",
+        "name": "Problem management",
+        "purpose": "The purpose of the problem management process is to minimise service disruption.",
+        "outcomes": [
+            "1. problems are identified, recorded, and classified;",
+            "2. problems are prioritised and analysed;",
+            "3. problems are resolved and closed;",
+            "4. problems which are not progressed according to defined service levels are escalated;",
+            "5. the effect of unresolved problems is minimised;",
+            "6. the status and progress of the resolution of problems are communicated to interested parties."
+        ],
+        "practices": [
+            "RES.3.1 Identify problems. Problems are identified, recorded and classified. [Outcome 1]",
+            "RES.3.2 Priortize and analyse problems. Problems are prioritised and analysed. [Outcome 2]",
+            "RES.3.3 Resolve and close problems. Problems are resolved and closed. [Outcome 3]",
+            "RES.3.4 Escalate unresolved problems. Problems which are not progressed according to agree service levels are escalated. [Outcome 4]",
+            "RES.3.5 Minimise the effects of unresolved problems. The effect of unresolved problems is minimised. [Outcome 5]",
+            "RES.3.6 Communicate problem status to interested parties. Communicate the status and progress o the resolution of problems to interested parties [Outcome 6]"
+        ],
+        "inputs": [
+            "03-30 Problem classification scheme [Outcome 1]",
+            "09-25 Problem disposition report [Outcome 2,3,4,5,6]",
+            "02-27 Problem management known error log [Outcome 3]",
+            "09-26 Problem mitigation report [Outcome 6]",
+            "08-44 Problem record [Outcome 1]",
+            "02-28 Problem report user communication list [Outcome 6]"
+        ],
+        "outputs": [
+            "08-13 Communication record [Outcome 6]",
+            "09-25 Problem disposition report [Outcome 1,2,3,4]",
+            "02-27 Problem management known error log [Outcome 5]",
+            "09-26 Problem mitigation report [Outcome 5]"
+        ]
+    },
+    "5.14 SDE.1 Budgeting and accounting for IT services.": {
+        "process_id": "SDE.1",
+        "name": "Budgeting and accounting for IT services",
+        "purpose": "The purpose of the budgeting and accounting for IT services process is to budget and account for servic provision.",
+        "outcomes": [
+            "1. costs of service provision are estimated;",
+            "2. budgets are produced using cost estimates;",
+            "3. deviations from the budget and costs are controlled;",
+            "4. deviations from the budget are resolved;",
+            "5. deviations from the budget and costs are communicated to interested parties."
+        ],
+        "practices": [
+            "SDE.1.1 Estimate costs of service provision. Information is provided to support the costing of servic provision. [Outcome 1]",
+            "SDE.1.2 Produce budgets using cost estimates. Costs are budgeted to enable effective financia control and decision-making for services delivered. [Outcome 2]",
+            "SDE.1.3 Control costs and deviations from the budget. The service provider monitors costs against th budget and reviews the financial forecasts. [Outcome 3]",
+            "SDE.1.4 Resolve deviations from the budget. The service provider manages costs. [Outcome 4]",
+            "SDE.1.5 Communicate to interested parties deviations from the budget and costs. The servic provider reports costs against the budget. [Outcome 5]"
+        ],
+        "inputs": [
+            "02-08 Budgeting and accounting communication list [Outcome 5]",
+            "09-03 Capacity future needs assessment report [Outcome 1]",
+            "04-06 Change of services provision cost estimates [Outcome 2]",
+            "03-37 Service catalogue [Outcome 1]",
+            "12-11 Service requirements [Outcome 1]",
+            "04-26 Services provision budget [Outcome 3]",
+            "04-27 Services provision costs [Outcome 3]",
+            "09-40 Services provision costs against budget variance report [Outcome 4,5]"
+        ],
+        "outputs": [
+            "04-06 Change of services provision cost estimates [Outcome 1]",
+            "08-13 Communication record [Outcome 5]",
+            "04-26 Services provision budget [Outcome 2]",
+            "09-40 Services provision costs against budget variance report [Outcome 3,4]"
+        ]
+    },
+    "5.15 SDE.2 Capacity management.": {
+        "process_id": "SDE.2",
+        "name": "Capacity management",
+        "purpose": "The purpose of the capacity management process is to ensure that the service provider has servic capacity to meet current and future agreed requirements.",
+        "outcomes": [
+            "1. current and future capacity and performance requirements are identified;",
+            "2. capacity is provided to meet current capacity and performance requirements;",
+            "3. capacity usage is monitored, analysed and performance is tuned;",
+            "4. capacity is prepared to meet future capacity and performance needs."
+        ],
+        "practices": [
+            "SDE.2.1 Identify current and future capacity and performance requirements. The service provide identifies the current and future capacity and performance requirements with the customer an interested parties. [Outcome 1]",
+            "SDE.2.2 Provide capacity. The service provider provides capacity to meet current capacity an performance requirements. [Outcome 2]",
+            "SDE.2.3 Monitor capacity usage. The service provider monitors capacity usage, analyses capacity dat and tunes performance. [Outcome 3]",
+            "SDE.2.4 Prepare capacity to meet future capacity needs. The service provider provides sufficien capacity to fulfil agreed capacity and performance requirements. [Outcome 4]"
+        ],
+        "inputs": [
+            "09-03 Capacity future needs assessment report [Outcome 4]",
+            "04-05 Capacity plan [Outcome 2,3,4]",
+            "08-08 Capacity plan status record [Outcome 2]",
+            "09-04 Capacity usage analysis report [Outcome 2,4]",
+            "02-09 Capacity usage data [Outcome 3]",
+            "08-11 Change request record [Outcome 4]",
+            "03-07 Customer technology roadmap [Outcome 1]",
+            "12-04 New or changed service requirements [Outcome 1]",
+            "12-11 Service requirements [Outcome 1]"
+        ],
+        "outputs": [
+            "09-03 Capacity future needs assessment report [Outcome 3,4]",
+            "04-05 Capacity plan [Outcome 2,3]",
+            "11-02 Capacity plan change request [Outcome 4]",
+            "12-02 Capacity requirements [Outcome 1]",
+            "09-04 Capacity usage analysis report [Outcome 3]",
+            "02-09 Capacity usage data [Outcome 2]"
+        ]
+    },
+    "5.16 SDE.3 Information security management.": {
+        "process_id": "SDE.3",
+        "name": "Information security management",
+        "purpose": "The purpose of the information security management process is to manage information security at a agreed level of security within all service management activities.",
+        "outcomes": [
+            "1. information security requirements are identified;",
+            "2. criteria for the assessment of information security risks and the acceptable level of risk are identified;",
+            "3. information security risks are identified;",
+            "4. information security risk is assessed;",
+            "5. information security risk measures and controls are defined;",
+            "6. information security risk measures and controls are implemented;",
+            "7. security incidents are quantified and recorded;",
+            "8. information security concerns are communicated to interested parties;",
+            "9. the impact of changes on information security is analysed and reported."
+        ],
+        "practices": [
+            "SDE.3.1 Identify information security requirements. The service provider identifies all parties that hav a need to access, use or manage the service provider\u2019s information or services. [Outcome 1]",
+            "SDE.3.2 Identify criteria for the assessment of information security risks. Criteria for the assessmen of information security risks and the acceptable level of risk are identified. [Outcome 2]",
+            "SDE.3.3 Identify information security risks. Information security risks are identified. [Outcome 3]",
+            "SDE.3.4 Assess information security risk. Management ensures that information security ris assessments are conducted at planned intervals. [Outcome 4]",
+            "SDE.3.5 Define information security risk measures and controls. The information security control describe the risks to which the controls relate, their operation and maintenance. [Outcome 5]",
+            "SDE.3.6 Implement information security risk measures and controls. The service provider operate appropriate information security controls to: a) fulfil the requirements of the information securit policy; b) achieve information security management objectives; c) manage risks related t information security. The service provider also implements information security controls wit external organizations. [Outcome 6]",
+            "SDE.3.7 Record security incidents. Security incidents are quantified and recorded. [Outcome 7]",
+            "SDE.3.8 Communicate information security concerns. Communicate information security concerns t interested parties. [Outcome 8]",
+            "SDE.3.9 Analyse the impact of changes on information security. The impact of changes o information security is analysed and reported. [Outcome 9]"
+        ],
+        "inputs": [
+            "08-23 Incident disposition record [Outcome 7]",
+            "04-12 Information security audit schedule [Outcome 6]",
+            "02-20 Information security communication list [Outcome 8]",
+            "09-16 Information security controls report [Outcome 6]",
+            "12-03 Information security requirements [Outcome 5,6]",
+            "09-18 Information security risk analysis report [Outcome 5]",
+            "03-17 Information security risk assessment criteria [Outcome 4]",
+            "09-19 Information security risk assessment report [Outcome 6]",
+            "04-13 Information security risk assessment schedule [Outcome 4]",
+            "02-23 Information security risk data [Outcome 4]",
+            "03-18 Information security risk measure [Outcome 4]",
+            "08-80 Service request disposition record [Outcome 7]"
+        ],
+        "outputs": [
+            "02-01 Access rights list [Outcome 6]",
+            "08-13 Communication record [Outcome 8]",
+            "09-16 Information security controls report [Outcome 5]",
+            "08-29 Information security incident record [Outcome 7]",
+            "12-03 Information security requirements [Outcome 1]",
+            "09-18 Information security risk analysis report [Outcome 4]",
+            "03-17 Information security risk assessment criteria [Outcome 2]",
+            "09-19 Information security risk assessment report [Outcome 4]",
+            "02-23 Information security risk data [Outcome 3,6]",
+            "03-18 Information security risk measure [Outcome 2]"
+        ]
+    },
+    "5.17 SDE.4 Service availability management.": {
+        "process_id": "SDE.4",
+        "name": "Service availability management",
+        "purpose": "The purpose of the service availability management process is to ensure that agreed service levels will b met in foreseeable circumstances.",
+        "outcomes": [
+            "1. service availability requirements are identified;",
+            "2. a service availability plan is developed using the service availability requirements;",
+            "3. service availability is tested against the service availability requirements to validate the plan.",
+            "4. service availability is monitored;",
+            "5. underlying causes of unplanned service non-availability are identified and analysed;",
+            "6. corrective actions are taken to address identified underlying causes;",
+            "7. changes to service availability requirements are reflected in the service availability plan."
+        ],
+        "practices": [
+            "SDE.4.1 Identify service availability requirements. The service provider identifies with the custome and interested parties service availability requirements. The agreed requirements take int consideration applicable business plans, service requirements, service level agreements an risks. [Outcome 1]",
+            "SDE.4.2 Develop a service availability plan. The service provider creates and implements a servic availability plan. [Outcome 2]",
+            "SDE.4.3 Test service availability. Service availability is tested against the service availabilit requirements to validate the plan. [Outcome 3]",
+            "SDE.4.4 Monitor service availability. Service availability is monitored. [Outcome 4]",
+            "SDE.4.5 Identify underlying causes of service non-availability. Underlying causes of unplanne service non-availability are identified and analysed. [Outcome 5]",
+            "SDE.4.6 Take action to address underlying causes. Take corrective actions to address identifie underlying causes for unplanned non-availability. [Outcome 6]",
+            "SDE.4.7 Reflect changes in requirements in the service availability plan. Changes to servic availability requirements are reflected in the service availability plan. [Outcome 7]"
+        ],
+        "inputs": [
+            "08-11 Change request record [Outcome 7]",
+            "09-30 Service availability analysis report [Outcome 6]",
+            "02-33 Service availability log [Outcome 5]",
+            "04-22 Service availability plan [Outcome 3,7]",
+            "08-53 Service availability plan amendment record [Outcome 7]",
+            "12-07 Service availability requirements [Outcome 2]",
+            "08-83 Service unplanned non-availability corrective action disposition record [Outcome 6]"
+        ],
+        "outputs": [
+            "11-01 Change request [Outcome 7]",
+            "03-11 Improvement opportunity [Outcome 6]",
+            "09-30 Service availability analysis report [Outcome 5]",
+            "02-33 Service availability log [Outcome 4]",
+            "04-22 Service availability plan [Outcome 2]",
+            "09-31 Service availability plan test report [Outcome 3]",
+            "12-07 Service availability requirements [Outcome 1]"
+        ]
+    },
+    "5.18 SDE.5 Service continuity management.": {
+        "process_id": "SDE.5",
+        "name": "Service continuity management",
+        "purpose": "The purpose of the service continuity management process is to ensure that agreed service levels will b met in foreseeable circumstances.",
+        "outcomes": [
+            "1. service continuity requirements are identified;",
+            "2. a service continuity plan is developed using the service continuity requirements;",
+            "3. service continuity is tested against the service continuity requirements to validate the plan;",
+            "4. changes to service continuity requirements are reflected in the service continuity plan."
+        ],
+        "practices": [
+            "SDE.5.1 Identify service continuity requirements. The service provider identifies with the customer an interested parties service continuity requirements. The agreed requirements take int consideration applicable business plans, service requirements, service level agreements an risks. [Outcome 1]",
+            "SDE.5.2 Develop a service continuity plan. The service provider creates and implements a servic continuity plan. [Outcome 2]",
+            "SDE.5.3 Test service continuity. Service continuity is tested against the service continuity requirement to validate the plan. [Outcome 3]",
+            "SDE.5.4 Reflect changes in requirements in the service continuity plan. Changes to service continuit requirements are reflected in the service continuity plan. [Outcome 4]"
+        ],
+        "inputs": [
+            "08-11 Change request record [Outcome 4]",
+            "04-23 Service continuity plan [Outcome 3,4]",
+            "08-61 Service continuity plan amendment record [Outcome 4]",
+            "12-08 Service continuity requirements [Outcome 2]"
+        ],
+        "outputs": [
+            "08-01 Amendment record [Outcome 4]",
+            "11-01 Change request [Outcome 4]",
+            "08-52 Review record [Outcome 3]",
+            "04-23 Service continuity plan [Outcome 2]",
+            "09-33 Service continuity plan test report [Outcome 3]",
+            "12-08 Service continuity requirements [Outcome 1]"
+        ]
+    },
+    "5.19 SDE.6 Service level management.": {
+        "process_id": "SDE.6",
+        "name": "Service level management",
+        "purpose": "The purpose of the service level management process is to ensure that agreed service level targets fo each customer are met.",
+        "outcomes": [
+            "1. services and dependencies are identified;",
+            "2. service level targets and workload characteristics for services are defined in service level agreements;",
+            "3. services are monitored against service level agreements;",
+            "4. service level performance against service level targets is communicated to interested parties;",
+            "5. changes to service requirements are reflected in the service level agreements."
+        ],
+        "practices": [
+            "SDE.6.1 Identify services and dependencies. Services and dependencies are identified. [Outcome 1]",
+            "SDE.6.2 Define service level agreements. Service level targets and workload characteristics for service are defined in service level agreements established with internal group or the customer. [Outcome 2]",
+            "SDE.6.3 Monitor services against service level agreements. Services are monitored against servic level agreements. [Outcome 3]",
+            "SDE.6.4 Communicate service level performance. Communicate service level performance agains service level targets to interested parties. [Outcome 4]",
+            "SDE.6.5 Manage changes to service level agreements. Changes to service requirements are reflecte in the service level agreements. [Outcome 5]"
+        ],
+        "inputs": [
+            "08-11 Change request record [Outcome 5]",
+            "03-37 Service catalogue [Outcome 2,5]",
+            "02-34 Service data [Outcome 3]",
+            "01-01 Service level agreement [Outcome 3,5]",
+            "02-35 Service level management stakeholder communication list [Outcome 4]",
+            "12-11 Service requirements [Outcome 2]"
+        ],
+        "outputs": [
+            "08-01 Amendment record [Outcome 5]",
+            "11-01 Change request [Outcome 5]",
+            "08-13 Communication record [Outcome 4]",
+            "03-37 Service catalogue [Outcome 1]",
+            "01-01 Service level agreement [Outcome 2]"
+        ]
+    },
+    "5.20 SDE.7 Service reporting.": {
+        "process_id": "SDE.7",
+        "name": "Service reporting",
+        "purpose": "The purpose of the service reporting process is to produce timely and accurate service reports to suppor effective communication and decision making.",
+        "outcomes": [
+            "1. the service reporting needs are identified;",
+            "2. service report content is defined in terms of identified service reporting needs and requirements;",
+            "3. service reports are produced according to the service report requirements;",
+            "4. service reports are communicated to interested parties."
+        ],
+        "practices": [
+            "SDE.7.1 Identify service reporting needs. The service reporting needs and requirements are identified. [Outcome 1]",
+            "SDE.7.2 Define service report content. Service report content is defined in terms of identified servic reporting needs and requirements. [Outcome 2]",
+            "SDE.7.3 Produce service reports. Service reports are produced according to the service repor requirements. [Outcome 3]",
+            "SDE.7.4 Communicate service reports. Communicate service reports to interested parties. [Outcome 4]"
+        ],
+        "inputs": [
+            "09-10 Implemented improvement evaluation report [Outcome 3]",
+            "09-00 Report [Outcome 3]",
+            "02-34 Service data [Outcome 3]",
+            "09-40 Service report [Outcome 4]",
+            "02-40 Service report communication list [Outcome 1,4]",
+            "03-48 Service report content definition [Outcome 3]",
+            "03-49 Service reporting needs definition [Outcome 2]"
+        ],
+        "outputs": [
+            "08-13 Communication record [Outcome 4]",
+            "09-40 Service report [Outcome 3]",
+            "03-48 Service report content definition [Outcome 2]",
+            "03-49 Service reporting needs definition [Outcome 1]"
+        ]
+    },
+    "5.21 SMS.1 Audit.": {
+        "process_id": "SMS.1",
+        "name": "Audit",
+        "purpose": "The purpose of the audit process is to independently determine conformity of selected services, product and processes to the requirements, plans and agreements, as appropriate.",
+        "outcomes": [
+            "1. the scope and purpose of each audit is defined;",
+            "2. the objectivity and impartiality of the conduct of audits and selection of auditors are assured;",
+            "3. conformity of selected services, products and processes with requirements, plans and agreements i determined;",
+            "4. nonconformities are recorded;",
+            "5. nonconformities are communicated to those responsible for corrective action and resolution;",
+            "6. corrective actions for nonconformities are verified."
+        ],
+        "practices": [
+            "SMS.1.1 Define the audit scope and purpose. The scope of each audit is defined taking int consideration the status and importance of the processes and areas to be audited, as well as th results of previous audits. [Outcome 1]",
+            "SMS.1.2 Assure the objectivity and impartiality of audit conduct. The selection of auditors an conduct of audits ensures objectivity and impartiality of the audit. Auditors do not audit their ow work. [Outcome 2]",
+            "SMS.1.3 Conduct audits. Audits are conducted to determine the conformity of selected services, product and processes with requirements, plans and agreements. [Outcome 3]",
+            "SMS.1.4 Record nonconformities. Nonconformities are identified against the management syste requirements, the requirements identified by the service provider or the service requirements. The results of internal audits including nonconformities, concerns and actions identified, ar recorded. [Outcome 4]",
+            "SMS.1.5 Communicate nonconformities to those responsible for corrective action and resolution. Results and actions are prioritized and responsibility allocated for actions, and communicated t interested parties. [Outcome 5]",
+            "SMS.1.6 Verify corrective actions for nonconformities. Management responsible for the area bein audited ensures that any corrections and corrective actions are taken without undue delay t eliminate nonconformities and their causes. Follow-up activities include the verification of th actions taken. [Outcome 6]"
+        ],
+        "inputs": [
+            "08-05 Audit nonconformity record [Outcome 5,6]",
+            "04-02 Audit plan [Outcome 2,3]",
+            "08-06 Audit result [Outcome 4]",
+            "02-06 Audit results communication list [Outcome 5]",
+            "04-03 Audit schedule [Outcome 1,3]",
+            "02-07 Auditor list [Outcome 3]",
+            "04-08 Configuration item audit schedule [Outcome 1]",
+            "04-12 Information security audit schedule [Outcome 1]"
+        ],
+        "outputs": [
+            "08-04 Audit nonconformity disposition record [Outcome 6]",
+            "08-05 Audit nonconformity record [Outcome 4]",
+            "04-02 Audit plan [Outcome 1]",
+            "08-06 Audit result [Outcome 3]",
+            "02-07 Auditor list [Outcome 2]",
+            "08-13 Communication record [Outcome 5]"
+        ]
+    },
+    "5.22 SMS.2 Improvement.": {
+        "process_id": "SMS.2",
+        "name": "Improvement",
+        "purpose": "The purpose of the improvement process is to continually improve the SMS, services and processes.",
+        "outcomes": [
+            "1. opportunities for improvement are identified and recorded;",
+            "2. opportunities for improvement are evaluated against agreed criteria for approval;",
+            "3. approved improvements are prioritised and actions planned;",
+            "4. approved improvements are implemented and confirmed;",
+            "5. the results of improvement actions are reported and communicated to interested parties."
+        ],
+        "practices": [
+            "SMS.2.1 Identify opportunities for improvement. Opportunities for improvement, including correctiv and preventive actions, are documented. [Outcome 1]",
+            "SMS.2.2 Evaluate opportunities for improvement. The service provider uses the evaluation criteria i the policy on continual improvement, when making decisions on opportunities for improvement. [Outcome 2]",
+            "SMS.2.3 Plan approved improvements. Opportunities for improvement are prioritized. Approve improvements are planned. The service provider manages improvement activities includin setting targets for improvements in one or more of quality, value, capability, cost, productivity resource utilization and risk reduction. [Outcome 3]",
+            "SMS.2.4 Implement approved improvements. The service provider manages improvement activitie including ensuring that approved improvements are implemented. [Outcome 4]",
+            "SMS.2.5 Communicate results of improvement actions. The service provider reports on implemente improvements. [Outcome 5]"
+        ],
+        "inputs": [
+            "09-10 Implemented improvement evaluation report [Outcome 4,5]",
+            "02-16 Improvement communication list [Outcome 5]",
+            "04-10 Improvement implementation schedule [Outcome 4]",
+            "03-11 Improvement opportunity [Outcome 1]",
+            "11-04 Improvement opportunity approved request [Outcome 4]",
+            "03-12 Improvement opportunity evaluation criteria [Outcome 2]",
+            "09-11 Improvement opportunity evaluation report [Outcome 2,3]",
+            "08-21 Improvement opportunity record [Outcome 2]",
+            "04-11 Improvement plan [Outcome 4]",
+            "03-13 Improvement target [Outcome 4]",
+            "08-29 Information security incident record [Outcome 1]",
+            "04-20 Reversing unsuccessful changes plan [Outcome 2]"
+        ],
+        "outputs": [
+            "08-13 Communication record [Outcome 5]",
+            "09-10 Implemented improvement evaluation report [Outcome 4]",
+            "04-10 Improvement implementation schedule [Outcome 3]",
+            "11-04 Improvement opportunity approved request [Outcome 3]",
+            "09-11 Improvement opportunity evaluation report [Outcome 2]",
+            "02-18 Improvement opportunity implementation log [Outcome 4]",
+            "08-21 Improvement opportunity record [Outcome 1]",
+            "04-11 Improvement plan [Outcome 3]",
+            "03-13 Improvement target [Outcome 3]"
+        ]
+    },
+    "5.23 SMS.3 Information item management.": {
+        "process_id": "SMS.3",
+        "name": "Information item management",
+        "purpose": "The purpose of the information item management process is to identify the items to be produced, and t maintain the recorded information produced by a process.",
+        "outcomes": [
+            "1. information items are identified in accordance with defined criteria;",
+            "2. Information items are controlled and issued according to defined criteria;",
+            "3. information items are communicated to interested parties;",
+            "4. information items are maintained in accordance with planned arrangements;",
+            "5. the integrity of information items is assured."
+        ],
+        "practices": [
+            "SMS.3.1 Identify information items. Information items are identified in accordance with defined criteria. Note: This practice identifies every instance in ISO/IEC 20000-1 where the verb 'document' o 'record' is used. [Outcome 1]",
+            "SMS.3.2 Control and issue information items. Information items are controlled and issued according t defined criteria. Note: The evidence in ISO/IEC 20000-1 is the verb 'approve' and 'agree'. [Outcome 2]",
+            "SMS.3.3 Communicate information items. Communicate information items to interested parties. Note: The keyword in ISO/IEC 20000-1 is 'communicate'. [Outcome 3]",
+            "SMS.3.4 Maintain information items. information items are maintained in accordance with planne arrangements. Note: The keyword in ISO/IEC 20000-1 is 'maintain'. [Outcome 4]",
+            "SMS.3.5 Assure the integrity of information items. Documents required by the SMS are controlled. Records are legible, readily identifiable and retrievable. [Outcome 5]"
+        ],
+        "inputs": [
+            "07-01 Information item [Outcome 3]",
+            "10-02 Information item repository [Outcome 1,2,4,5]",
+            "03-42 Service management objectives [Outcome 1]",
+            "04-24 Service management plan [Outcome 1]"
+        ],
+        "outputs": [
+            "08-01 Amendment record [Outcome 4]",
+            "08-02 Approval record [Outcome 2]",
+            "08-13 Communication record [Outcome 3]",
+            "07-01 Information item [Outcome 1]",
+            "08-85 Status record [Outcome 5]"
+        ]
+    },
+    "5.24 SMS.4 Management review.": {
+        "process_id": "SMS.4",
+        "name": "Management review",
+        "purpose": "The purpose of the management review process is to assess the performance of the SMS and to identif potential improvements.",
+        "outcomes": [
+            "1. the objectives of the review are established;",
+            "2. the status and performance of an activity or process are assessed;",
+            "3. risks, problems and opportunities for improvement are identified and recorded;",
+            "4. review results are communicated to interested parties;",
+            "5. action items resulting from reviews are tracked to closure."
+        ],
+        "practices": [
+            "SMS.4.1 Establish review objectives. The management reviews demonstrate the ability of the SMS an the services to achieve service management objectives and fulfil service requirements. Thi review includes assessing opportunities for improvement and the need for changes to the SMS including the policy and objectives for service management. [Outcome 1]",
+            "SMS.4.2 Assess the status and performance of an activity or process. Top management reviews th SMS and the services to ensure their continued suitability and effectiveness. The input t management reviews includes at least information on: a) customer feedback; b) service an process performance and conformity; c) current and forecast human, technical, information an financial resource levels; d) current and forecast human and technical capabilities; e) risks; f results and follow-up actions from audits; g) results and follow-up actions from previou management reviews; h) status of preventive and corrective actions; i) changes that could affec the SMS and the services; j) opportunities for improvement. [Outcome 2]",
+            "SMS.4.3 Identify risks, problems and opportunities for improvement. The results of managemen reviews, concerns and actions identified, are recorded. [Outcome 3]",
+            "SMS.4.4 Communicate review results to interested parties. Communicate the results and actions t interested parties. [Outcome 4]",
+            "SMS.4.5 Track action items resulting from reviews to closure. The records from the managemen review include at least decisions and actions related to resources, improvement of th effectiveness of the SMS and improvement of the services. [Outcome 5]"
+        ],
+        "inputs": [
+            "08-17 Customer satisfaction review record [Outcome 2]",
+            "02-17 Improvement opportunity disposition log [Outcome 5]",
+            "09-12 Information security audit report [Outcome 2]",
+            "02-24 Management review communication list [Outcome 4]",
+            "02-25 Management review issue log [Outcome 3,5]",
+            "03-23 Management review objectives [Outcome 2]",
+            "09-20 Management review process assessment report [Outcome 2]",
+            "03-24 Management review resource forecast [Outcome 2]",
+            "09-00 Report [Outcome 2]",
+            "09-31 Service availability plan test report [Outcome 2]",
+            "03-37 Service catalogue [Outcome 2]",
+            "09-33 Service continuity plan test report [Outcome 2]",
+            "09-34 Service continuity plan test result finding report [Outcome 2]",
+            "01-01 Service level agreement [Outcome 2]",
+            "08-74 Service performance record [Outcome 2]"
+        ],
+        "outputs": [
+            "08-13 Communication record [Outcome 4]",
+            "03-11 Improvement opportunity [Outcome 3]",
+            "02-18 Improvement opportunity implementation log [Outcome 5]",
+            "02-25 Management review issue log [Outcome 2,5]",
+            "03-23 Management review objectives [Outcome 1]",
+            "08-44 Problem record [Outcome 3]",
+            "08-52 Review record [Outcome 2]",
+            "02-32 Risk log [Outcome 3]"
+        ]
+    },
+    "5.25 SMS.5 Resource management.": {
+        "process_id": "SMS.5",
+        "name": "Resource management",
+        "purpose": "The purpose of the resource management process is to provide the organization with necessar infrastructure, work environment, and human resources, consistent with business needs and servic requirements.",
+        "outcomes": [
+            "1. resources and infrastructure are determined and provided;",
+            "2. roles, responsibilities and competencies needed to support SMS processes are defined;",
+            "3. individuals with the necessary competencies are appointed to the roles needed to perform servic management activities;",
+            "4. identified competency gaps are filled through training or recruitment."
+        ],
+        "practices": [
+            "SMS.5.1 Determine and provide resources and infrastructure. Determine and provide resources an infrastructure to support SMS processes and service provision. [Outcome 1]",
+            "SMS.5.2 Define roles, responsibilities and competencies. Define the roles, responsibilities an competencies needed to support SMS processes. [Outcome 2]",
+            "SMS.5.3 Appoint individuals with the necessary competencies. Individuals with the necessar competencies are appointed to the roles needed to perform service management activities. [Outcome 3]",
+            "SMS.5.4 Fill competency gaps through training or recruitment. The service provider where applicable provides training or takes other actions to achieve the necessary competence. [Outcome 4]"
+        ],
+        "inputs": [
+            "12-09 Service management competency requirements [Outcome 4]",
+            "03-44 Service management roles and responsibilities [Outcome 3]"
+        ],
+        "outputs": [
+            "12-09 Service management competency requirements [Outcome 2]",
+            "03-43 Service management resource needs [Outcome 1]",
+            "03-44 Service management roles and responsibilities [Outcome 2]",
+            "08-73 Service management training record [Outcome 4]",
+            "03-46 Service provider roles and responsibilities [Outcome 3]",
+            "03-51 Sub-contracted supplier roles and responsibilities [Outcome 2]",
+            "02-45 Supplier role assignments list [Outcome 2]"
+        ]
+    },
+    "5.26 SMS.6 Risk management.": {
+        "process_id": "SMS.6",
+        "name": "Risk management",
+        "purpose": "The purpose of the risk management process is to identify, analyse, evaluate, treat and monitor the risk continually.",
+        "outcomes": [
+            "1. risks are identified;",
+            "2. identified risks are categorised, assessed and the priority in which to apply resources to treatment o these risks is determined;",
+            "3. risks and their proposed treatment are communicated to interested parties;",
+            "4. assessed risks are monitored;",
+            "5. appropriate treatment is taken to correct or avoid unacceptable assessed risks."
+        ],
+        "practices": [
+            "SMS.6.1 Identify risks. Identify risks during the establishment of a process or a service. [Outcome 1]",
+            "SMS.6.2 Categorise and assess risks. Identified risks are categorised, assessed and the priority in whic to apply resources to treatment of these risks is determined. [Outcome 2]",
+            "SMS.6.3 Communicate risks and proposed treatment to interested parties. Communicate risks an their proposed treatment to interested parties. [Outcome 3]",
+            "SMS.6.4 Monitor risks. Assessed risks are monitored. [Outcome 4]",
+            "SMS.6.5 Take appropriate treatment to avoid unacceptable risks. Appropriate treatment is taken t correct or avoid unacceptable assessed risks. [Outcome 5]"
+        ],
+        "inputs": [
+            "03-04 Change request evaluation criteria [Outcome 1]",
+            "03-14 Information security change request evaluation criteria [Outcome 4]",
+            "09-19 Information security risk assessment report [Outcome 4]",
+            "04-15 New or changed service plan [Outcome 2]",
+            "09-00 Report [Outcome 2]",
+            "02-32 Risk log [Outcome 2,3,4,5]",
+            "03-36 Service availability risk evaluation criteria [Outcome 1]",
+            "03-39 Service continuity risk evaluation criteria [Outcome 1]",
+            "03-50 Service risk evaluation criteria [Outcome 1]"
+        ],
+        "outputs": [
+            "08-13 Communication record [Outcome 3]",
+            "09-14 Information security change request evaluation report [Outcome 4]",
+            "09-00 Report [Outcome 1,4]",
+            "02-32 Risk log [Outcome 2]",
+            "04-21 Risk treatment strategy [Outcome 5]",
+            "09-41 Service risk assessment report [Outcome 1]"
+        ]
+    },
+    "5.27 SMS.7 Service measurement.": {
+        "process_id": "SMS.7",
+        "name": "Service measurement",
+        "purpose": "The purpose of the service measurement process is to identify, collect, analyse, and report data relating t the services provided and processes implemented to support effective management of the processes, an to objectively demonstrate the quality of the services provided.",
+        "outcomes": [
+            "1. the prioritised information needs related to provided services and implemented processes ar identified;",
+            "2. an appropriate set of measures, driven by the information needs are identified and/or developed;",
+            "3. the required data are collected, and verified;",
+            "4. the required data are analysed and the results interpreted;",
+            "5. measurement information is used to support decisions and provide an objective basis fo communication."
+        ],
+        "practices": [
+            "SMS.7.1 Identify the prioritised information needs related to provided services. Identify the prioritise information needs related to provided services and implemented processes. [Outcome 1]",
+            "SMS.7.2 Identify an appropriate set of measures. An appropriate set of measures, driven by th information needs are identified and/or developed. [Outcome 2]",
+            "SMS.7.3 Collect and verify the required data. The success or failure of releases is monitored. Measurements include incidents related to a release in the period following deployment of release. [Outcome 3]",
+            "SMS.7.4 Analyse the required data. The service provider analyses the types, volumes and impacts o information security incidents. The service provider analyses data and trends on incidents an problems. Requests for change are analysed at to detect trends. The success or failure o releases is analysed. Analysis includes assessment of the impact of the release on th customer. [Outcome 4]",
+            "SMS.7.5 Support decisions and communication. Support decisions and provide an objective basis fo communication with measurement information. [Outcome 5]"
+        ],
+        "inputs": [
+            "09-01 Analysis report [Outcome 5]",
+            "03-25 Measurement objectives [Outcome 2,3]",
+            "03-29 Performance criteria [Outcome 3]",
+            "02-03 Performance data [Outcome 4]",
+            "01-01 Service level agreement [Outcome 1]"
+        ],
+        "outputs": [
+            "09-01 Analysis report [Outcome 4]",
+            "03-25 Measurement objectives [Outcome 1]",
+            "03-29 Performance criteria [Outcome 2]",
+            "02-03 Performance data [Outcome 3]"
+        ]
+    },
+    "5.28 SMS.8 SMS Establishment and improvement.": {
+        "process_id": "SMS.8",
+        "name": "SMS Establishment and improvement",
+        "purpose": "The purpose of the SMS establishment and improvement process is to identify the scope of, and provid the service management processes that enable the effective implementation and improvement of all I services.",
+        "outcomes": [
+            "1. service requirements are established in response to business needs, customer requirements an customer requests;",
+            "2. the objectives and requirements for service management are identified and established to satisf business needs, the service provider's financial processes, regulatory, contractual and statutor requirements;",
+            "3. SMS processes are established to support service management objectives;",
+            "4. action is taken to improve the effectiveness and efficiency of the SMS to meet the servic management objectives and requirements."
+        ],
+        "practices": [
+            "SMS.8.1 Establish service requirements in response to business needs, customer requirement and customer requests. The service provider identifies the service requirements for the new o changed services. [Outcome 1]",
+            "SMS.8.2 Identify the objectives and requirements for service management. The objectives an requirements for service management are identified and established to satisfy business needs the service provider's financial processes, regulatory, contractual and statutory requirements. [Outcome 2]",
+            "SMS.8.3 Establish SMS processes. SMS processes are established to support service managemen objectives. [Outcome 3]",
+            "SMS.8.4 Improve effectiveness and efficiency. Take action to improve the effectiveness and efficienc of the SMS to meet the service management objectives and requirements. [Outcome 4]"
+        ],
+        "inputs": [
+            "03-42 Service management objectives [Outcome 3]",
+            "12-10 Service management process interface requirements [Outcome 3]"
+        ],
+        "outputs": [
+            "12-01 Alternative party process requirements [Outcome 2]",
+            "02-17 Improvement opportunity disposition log [Outcome 4]",
+            "03-17 Information security risk assessment criteria [Outcome 3]",
+            "05-00 Policy [Outcome 3]",
+            "06-00 Procedure [Outcome 3]",
+            "03-42 Service management objectives [Outcome 2]",
+            "05-09 Service management policy [Outcome 2]",
+            "12-10 Service management process interface requirements [Outcome 2]",
+            "09-37 Service management system performance analysis report [Outcome 4]",
+            "03-45 Service management system scope definition [Outcome 2]",
+            "12-11 Service requirements [Outcome 1]"
+        ]
+    },
+    "5.29 SMS.9 SMS Implementation and operation.": {
+        "process_id": "SMS.9",
+        "name": "SMS Implementation and operation",
+        "purpose": "The purpose of the SMS implementation and operation process is to plan, manage and monitor th performance of IT service provision, in order to satisfy the requirements of customers and intereste parties.",
+        "outcomes": [
+            "1. service management is planned and implemented with the intent of achieving the service managemen objectives and satisfying customers;",
+            "2. services supplied by other parties are managed to meet the service requirements;",
+            "3. performance and progress against the planned arrangements is monitored;",
+            "4. actions to correct deviations from planned arrangements are taken when targets are not achieved;",
+            "5. organizational risks are continually identified, analysed, treated and monitored."
+        ],
+        "practices": [
+            "SMS.9.1 Service management is planned and implemented. Service management is planned an implemented with the intent of achieving the service management objectives and satisfyin customers. [Outcome 1]",
+            "SMS.9.2 Manage services provided by other suppliers. Services supplied by other parties ar managed to meet the service requirements. [Outcome 2]",
+            "SMS.9.3 Monitor service delivery against planned arrangements. Performance and progress agains the planned arrangements is monitored. [Outcome 3]",
+            "SMS.9.4 Take action to correct deviations from planned arrangements when targets are no achieved. Take action to correct deviations from planned arrangements when targets are no achieved. [Outcome 4]",
+            "SMS.9.5 Manage organisational risks. Organizational risks are continually identified, analysed, treate and monitored. [Outcome 5]"
+        ],
+        "inputs": [
+            "12-01 Alternative party process requirements [Outcome 2]",
+            "04-02 Audit plan [Outcome 1]",
+            "08-06 Audit result [Outcome 3]",
+            "04-03 Audit schedule [Outcome 3]",
+            "12-02 Capacity requirements [Outcome 1]",
+            "02-02 Issue log [Outcome 4,5]",
+            "02-25 Management review issue log [Outcome 5]",
+            "03-23 Management review objectives [Outcome 5]",
+            "09-00 Report [Outcome 3]",
+            "05-09 Service management policy [Outcome 1]",
+            "04-26 Services provision budget [Outcome 1]",
+            "02-42 Services stakeholder communication list [Outcome 4]"
+        ],
+        "outputs": [
+            "04-03 Audit schedule [Outcome 1]",
+            "04-05 Capacity plan [Outcome 1]",
+            "08-13 Communication record [Outcome 4]",
+            "04-08 Configuration item audit schedule [Outcome 1]",
+            "04-09 Customer satisfaction sampling schedule [Outcome 1]",
+            "03-11 Improvement opportunity [Outcome 4]",
+            "04-12 Information security audit schedule [Outcome 1]",
+            "04-13 Information security risk assessment schedule [Outcome 1]",
+            "02-02 Issue log [Outcome 3,4]",
+            "04-14 Management review schedule [Outcome 1]",
+            "09-00 Report [Outcome 2]",
+            "08-52 Review record [Outcome 3]",
+            "04-21 Risk treatment strategy [Outcome 5]",
+            "04-24 Service management plan [Outcome 1]",
+            "04-25 Service provision review schedule [Outcome 1]",
+            "04-28 Supplier agreement review schedule [Outcome 1]"
+        ]
+    }
+}
