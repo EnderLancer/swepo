@@ -33,6 +33,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=50, unique=True)),
+                ('code', models.CharField(max_length=20, unique=True)),
                 ('description', models.TextField(blank=True, default='', max_length=500)),
             ],
         ),
@@ -49,6 +50,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=50, unique=True)),
+                ('code', models.CharField(max_length=20, unique=True)),
                 ('description', models.TextField(blank=True, default='', max_length=500)),
                 ('category', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, related_name='processes', to='company_assistant.processcategory')),
             ],

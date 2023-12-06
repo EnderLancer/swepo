@@ -6,33 +6,38 @@
         <h1>{{ company.name }}</h1>
         <a href="{% url 'company_list' %}">Back to Company List</a>
     </p>
-   <div class="card">
-       <div class="card-body">
-           <p class="card-text">{{ company.description }}</p>
-           <p class="card-text">Followers: 
-            {% for follower in company.followers.all|slice:":2" %}
-                {{ follower.username }}
-            {% empty %}
-                No followers yet
-            {% endfor %}
-            {% if company.followers.count > 3 %}
-                + {{ company.followers.count|add:"-2" }} people
-            {% elif company.followers.count == 3 %}
-                + 1 person
-            {% endif %}
-           </p>
-       </div>
-       <div class="company-specifics">
-        <h2>Company Specifics</h2>
-        <ul>
-            {% for companyspecific in company_specifics %}
-                <li><strong>{{ companyspecific.specific.name }}:{{ companyspecific.score }}</strong> {{ companyspecific.specific.description }}</li>
-            {% empty %}
-                <li>No specifics available</li>
-            {% endfor %}
-        </ul>
+    <div class="card">
+        <div class="row">
+            <div class="company-specifics col">
+                <h2>Company Specifics</h2>
+                <ul>
+                    {% for companyspecific in company_specifics %}
+                    <li><strong>{{ companyspecific.specific.name }}:{{ companyspecific.score }}</strong> {{ companyspecific.specific.description }}</li>
+                    {% empty %}
+                    <li>No specifics available</li>
+                    {% endfor %}
+                </ul>
+                <a href="{% url 'company_specifics_change' company.id %}" class="btn btn-primary">Configure Specifics</a>
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <p class="card-text">{{ company.description }}</p>
+                    <p class="card-text">Followers: 
+                        {% for follower in company.followers.all|slice:":2" %}
+                        {{ follower.username }}
+                        {% empty %}
+                        No followers yet
+                        {% endfor %}
+                        {% if company.followers.count > 3 %}
+                        + {{ company.followers.count|add:"-2" }} people
+                        {% elif company.followers.count == 3 %}
+                        + 1 person
+                        {% endif %}
+                    </p>
+                    <a href="{% url 'company_eval_view' company.id %}" class="btn btn-primary">Evaluate</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <a href="{% url 'company_specifics_change' company.id %}" class="btn btn-primary">Configure Specifics</a>
-</div>
 </div>
 {% endblock %}

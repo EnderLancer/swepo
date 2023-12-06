@@ -103,7 +103,7 @@ def company_specifics_change(request, company_id: int):
     unassigned_specifics = Specific.objects.exclude(id__in=company.specifics.values_list("id", flat=True))
     return render(
         request=request,
-        template_name='company_assistant/company_view.html',
+        template_name='company_assistant/company_specifics_change.html',
         context={
             'company': company,
             'company_specifics': company_specifics,
