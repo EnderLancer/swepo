@@ -9,6 +9,7 @@ from .models import (
     SwdProcess,
     SpecificPracticeWeightRelation,
     CompanySpecific,
+    Specific,
     ProcessPractice
 )
 
@@ -18,4 +19,5 @@ admin.site.register(ProcessCategory)
 admin.site.register(SwdProcess)
 admin.site.register(SpecificPracticeWeightRelation)
 admin.site.register(CompanySpecific)
+admin.site.register(Specific)
 admin.site.register(ProcessPractice)

@@ -1,0 +1,15 @@
+{% extends "main/base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% load django_bootstrap5 %}
+
+{% block content %}   
+ 
+<div class="container py-5">
+	<h1>Home</h1>
+    {{ user.username }}
+	<!-- <p class="text-center">If you already have an account, <a href="/login">login</a> instead.</p> -->
+</div>
+
+{% endblock %}
