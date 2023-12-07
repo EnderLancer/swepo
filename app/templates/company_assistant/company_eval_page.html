@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+
+{% load django_bootstrap5 %}
+
+{% block content %}
+<div class="container">
+    <h1>Company Specifics List</h1>
+    <a href="{% url 'company' company.id %}">Back to Company</a>
+    <div class="row">
+        <div class="col">
+            Row for assessments
+        </div>
+        <div class="col container">
+            {{ diagram|safe }}
+            <br>
+            <h4>Practices:</h4>
+            {% for practice in sorted_practices %}
+                <div class="row">
+                    > {{ practice.practice_code }}: {{ practice.priority }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<br>
+{% endblock %}

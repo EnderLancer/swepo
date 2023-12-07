@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import login
 from django.core.paginator import Paginator
+from company_assistant.services.diagram_drawer import DiagramDrawer
+
+from company_assistant.services.prioritizer import Prioritizer
 
 from .models import Company, CompanySpecific, Specific
 
@@ -113,10 +116,16 @@ def company_specifics_change(request, company_id: int):
 
 def company_eval_view(request, company_id):
     company = Company.objects.get(id=company_id)
+    prioritizer = Prioritizer(company=company)
+    sorted_practices = prioritizer.get_sorted_by_practices()
+    drawer = DiagramDrawer(prioritized_practices=sorted_practices)
+    diagram = drawer.draw()
     return render(
         request=request,
-        template_name='company_assistant/company_specifics_change.html',
+        template_name='company_assistant/company_eval_page.html',
         context={
             'company': company,
+            'sorted_practices': sorted_practices,
+            'diagram': diagram
         }
     )
