@@ -2,13 +2,14 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import login
 from django.core.paginator import Paginator
+from company_assistant.services.evaluator import Evaluator
 from company_assistant.services.diagram_drawer import DiagramDrawer
 
 from company_assistant.services.prioritizer import Prioritizer
 
-from .models import Company, CompanySpecific, Specific
+from .models import Company, CompanySpecific, Specific, SwdProcess
 
-from .forms import NewEmployerForm, NewCompanyForm
+from .forms import PracticeFormset, NewEmployerForm, NewCompanyForm
 
 def authorization_with_login(view):
     def auth_awared_view(request, *args, **kwargs):
@@ -116,9 +117,31 @@ def company_specifics_change(request, company_id: int):
 
 def company_eval_view(request, company_id):
     company = Company.objects.get(id=company_id)
-    prioritizer = Prioritizer(company=company)
-    sorted_practices = prioritizer.get_sorted_by_practices()
-    drawer = DiagramDrawer(prioritized_practices=sorted_practices)
+    if request.method == "POST":
+        payload = {
+            key.replace("attr-", ""): request.POST.getlist(key)
+            for key in request.POST
+            if key.startswith("attr-")
+        }
+        evaluator = Evaluator(
+            company=company,
+            practice_attributes=payload
+        )
+        sorted_practices = evaluator.prioritized_practices
+        drawer = DiagramDrawer(prioritized_practices=sorted_practices)
+        print(evaluator.evaluate())
+        print(evaluator.process_scores)
+        print(evaluator.practice_scores)
+        drawer.plot_eval_score(evaluator.overall_score)
+    else:
+        prioritizer = Prioritizer(company=company)
+        sorted_practices = prioritizer.get_sorted_by_practices()
+        drawer = DiagramDrawer(prioritized_practices=sorted_practices)
+    all_processes = SwdProcess.objects.all()  # TODO: allow specify processes to show
+    practices_list = {
+        process: PracticeFormset(instance=process)
+        for process in all_processes
+    }
     diagram = drawer.draw()
     return render(
         request=request,
@@ -126,6 +149,7 @@ def company_eval_view(request, company_id):
         context={
             'company': company,
             'sorted_practices': sorted_practices,
-            'diagram': diagram
+            'diagram': diagram,
+            'practices_list': practices_list
         }
     )

@@ -7,10 +7,66 @@
     <h1>Company Specifics List</h1>
     <a href="{% url 'company' company.id %}">Back to Company</a>
     <div class="row">
-        <div class="col">
-            Row for assessments
+        <div class="col-7">
+            <form method="POST">
+                {% csrf_token %}
+                    {% for process, practice_formset in practices_list.items %}
+                        <br>
+                        <div class="card">
+                            <p>
+                                <h3>
+                                    {{ process.name }} ({{ process.code }})
+                                    <a class="btn btn-link" role="button" data-bs-toggle="collapse" href="#process_{{ process.id }}" aria-bs-expanded="false" aria-bs-controls="process_{{ process.id }}">
+                                        (show)
+                                    </a>
+                                </h3>
+                            </p>
+                            <div class="card-body collapse" id="process_{{ process.id }}">
+                                {% for practice in practice_formset.forms %}
+                                    <br>
+                                    <div class="row card">
+                                        <p>
+                                            <h5>
+                                                {{ practice.name.value }} ({{ practice.code.value }})
+                                                <a class="btn btn-link" role="button" data-bs-toggle="collapse" href="#descriptionCollapse_{{ practice.id.value }}" aria-bs-expanded="false" aria-bs-controls="descriptionCollapse_{{ practice.id.value }}">
+                                                    (show)
+                                                </a>
+                                            </h5>
+                                        </p>
+                                        <div class="collapse" id="descriptionCollapse_{{ practice.id.value }}">
+                                            <div class="col-lg-8">
+                                                <p>
+                                                    <a>
+                                                        {{ practice.description.value }}
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            {% if practice.nested %}
+                                                <div class="col-lg-4">
+                                                    <h5>Attributes:</h5>
+                                                    <!-- {{ practice.nested.management_form }} -->
+                                                    {% for form in practice.nested.forms %}
+                                                        <div class="row form-floating">
+                                                            <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" name="attr-{{ practice.code.value }}">
+                                                                {% for x, y in form.fields.score.choices %}
+                                                                    <option value="{{ x }}"{% if form.fields.score.initial.0 == x %} value="{{ x }}" selected hidden{% endif %}>{{ y }}</option>
+                                                                {% endfor %}
+                                                            </select>
+                                                            <label for="floatingSelectGrid">{{ form.name.value }}</label>
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% bootstrap_button button_type="submit" content="Save Changes" %}
+            </form>
         </div>
-        <div class="col container">
+        <div class="col-5 container">
             {{ diagram|safe }}
             <br>
             <h4>Practices:</h4>
