@@ -1,0 +1,21 @@
+{% extends "main/base.html" %}
+
+{% block title %} Create new company {% endblock %}
+
+{% load django_bootstrap5 %}
+
+{% block content %}
+
+<div class="container py-5">
+    <h1>New Company</h1>
+    <form method="POST">
+        {% csrf_token %}
+
+        {% bootstrap_form form %}
+
+        {% bootstrap_button button_type="submit" content="Create" %}
+        {% bootstrap_button button_type="reset" content="Cancel" %}
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,173 @@
+{
+    "Change management": {
+        "index": 2,
+        "process_id": "CON.1",
+        "name": "Change management",
+        "purpose": "The purpose of the change management process is to ensure all changes are assessed, approved implemented and reviewed in a controlled manner.",
+        "outcomes": [
+            "1. change requests are recorded and classified;",
+            "2. change requests are assessed using defined criteria;",
+            "3. change requests are approved before changes are developed and deployed;",
+            "4. an implementation schedule of changes and releases is established;",
+            "5. an implementation schedule of changes and releases is communicated to interested parties;",
+            "6. approved changes are developed and tested;",
+            "7. unsuccessful changes are reversed or remedied."
+        ],
+        "practices": [
+            "CON.1.1 Record change requests. Changes to the services, service components, service requirements catalogue of services, service level agreements and other documented agreements are recorde and classified. [Outcome 1]",
+            "CON.1.2 Assess change requests. Requests for change are assessed to identify: a) new or change information security risks; b) potential impact on the existing information security policy an controls, and the impact of requests for change on releases and plans for deployment. [Outcom 2]",
+            "CON.1.3 Make decisions on change requests. The service provider and interested parties mak decisions on the acceptance of requests for change. Decision-making takes into consideratio the risks, the potential impacts to services and the customer, service requirements, busines benefits, technical feasibility and financial impact. [Outcome 3]",
+            "CON.1.4 Establish an implementation schedule of changes and releases. Establish a schedule o change containing details of the approved changes and their proposed deployment dates. Planning is coordinated with the change management process and includes references to th related requests for change, known errors and problems which are being closed through thi release. [Outcome 4]",
+            "CON.1.5 Communicate an implementation schedule of changes and releases. Communicate schedule containing details of the approved changes and their proposed deployment dates t interested parties. [Outcome 5]",
+            "CON.1.6 Develop and test approved changes. Approved changes are developed and tested. [Outcom 6]",
+            "CON.1.7 Reverse or remedy unsuccessful changes. The change is reversed or remedied i unsuccessful. [Outcome 7]"
+        ],
+        "inputs": [
+            "04-06 Change of services provision cost estimates [Outcome 2]",
+            "11-01 Change request [Outcome 1,2]",
+            "03-03 Change request classification criteria [Outcome 1]",
+            "03-04 Change request evaluation criteria [Outcome 2]",
+            "04-07 Change schedule [Outcome 5,6]",
+            "02-10 Change schedule communication list [Outcome 5]",
+            "09-08 Configuration item status report [Outcome 2]",
+            "03-14 Information security change request evaluation criteria [Outcome 2]",
+            "02-29 Release log [Outcome 2]",
+            "09-00 Report [Outcome 3]",
+            "04-20 Reversing unsuccessful changes plan [Outcome 7]",
+            "04-26 Services provision budget [Outcome 2]"
+        ],
+        "outputs": [
+            "08-02 Approval record [Outcome 3]",
+            "08-11 Change request record [Outcome 1]",
+            "04-07 Change schedule [Outcome 4]",
+            "08-13 Communication record [Outcome 5]",
+            "02-15 Implemented changes log [Outcome 6]",
+            "11-07 New or changed service request [Outcome 6]",
+            "04-18 Release schedule [Outcome 4]",
+            "09-00 Report [Outcome 2]"
+        ]
+    },
+    "Configuration management": {
+        "index": 3,
+        "process_id": "CON.2",
+        "name": "Configuration management",
+        "purpose": "The purpose of the configuration management process is to establish and maintain the integrity of al identified service components.",
+        "outcomes": [
+            "1. items requiring configuration management are identified;",
+            "2. the status of configuration items and modifications are recorded and reported;",
+            "3. changes to items under configuration management are controlled;",
+            "4. the integrity of systems, services and service components is assured;",
+            "5. the configuration of released items is controlled."
+        ],
+        "practices": [
+            "CON.2.1 Identify configuration items. Configuration items are uniquely identified. [Outcome 1]",
+            "CON.2.2 Record configuration item status. The information recorded for each configuration item (CI ensures effective control and includes at least: a) description of the CI; b) relationship(s) betwee the CI and other CIs; c) relationship(s) between the CI and service components; d) status; e version; f) location; g) associated requests for change; h) associated problems and known errors. [Outcome 2]",
+            "CON.2.3 Changes to configuration items are controlled. All requests for change to configuration item defined in the change management policy are managed using the change management process. The configuration management database records are updated following the successfu deployment of changes. [Outcome 3]",
+            "CON.2.4 Assure the integrity of systems, services and service components. Configuration contro procedures ensure that the integrity of services and service components is maintained. Th service provider audits the records stored in the configuration management database. Change to configuration items are traceable and auditable to ensure integrity of the configuration item and the data in the configuration management database. [Outcome 4]",
+            "CON.2.5 Control the configuration of released items. A configuration baseline of the affecte configuration items is taken before deployment of a release into the live environment. Maste copies of the configuration items recorded in the configuration management database are store in secure physical or electronic libraries referenced by the configuration records. This includes a least documentation, licence information, software and, where available, images of the hardwar configuration. [Outcome 5]"
+        ],
+        "inputs": [
+            "08-11 Change request record [Outcome 3]",
+            "04-08 Configuration item audit schedule [Outcome 4]",
+            "02-11 Configuration item change log [Outcome 2,4]",
+            "08-15 Configuration item record [Outcome 2,3,4]",
+            "02-12 Configuration item report user communication list [Outcome 2]",
+            "09-08 Configuration item status report [Outcome 2,3]",
+            "03-32 Release notes [Outcome 5]",
+            "01-01 Service level agreement [Outcome 1]",
+            "01-02 Supplier agreement [Outcome 1]"
+        ],
+        "outputs": [
+            "08-13 Communication record [Outcome 2]",
+            "08-14 Configuration item archive [Outcome 5]",
+            "09-07 Configuration item audit report [Outcome 4]",
+            "02-11 Configuration item change log [Outcome 3]",
+            "08-15 Configuration item record [Outcome 1]",
+            "09-08 Configuration item status report [Outcome 2]"
+        ]
+    },
+    "Release and deployment management": {
+        "index": 4,
+        "process_id": "CON.3",
+        "name": "Release and deployment management",
+        "purpose": "The purpose of the release and deployment management process is to deploy releases into the liv environment in a controlled manner.",
+        "outcomes": [
+            "1. requirements for releases are established and agreed with interested parties;",
+            "2. releases of services and service components are planned;",
+            "3. releases are designed;",
+            "4. releases are tested prior to deployment;",
+            "5. approved releases are deployed;",
+            "6. integrity of hardware, software, and other service components is assured during deployment of th release.",
+            "7. unsuccessfully deployed releases are reversed or remedied;",
+            "8. release information is communicated to interested parties."
+        ],
+        "practices": [
+            "CON.3.1 Establish requirements for releases. Requirements for releases are established and agree with interested parties. [Outcome 1]",
+            "CON.3.2 Plan releases of services or service components. Plan releases of services and servic components. [Outcome 2]",
+            "CON.3.3 Design releases. Releases are designed. [Outcome 3]",
+            "CON.3.4 Test releases. Releases are tested prior to deployment. [Outcome 4]",
+            "CON.3.5 Deploy releases. Approved releases are deployed. [Outcome 5]",
+            "CON.3.6 Assure integrity of hardware, software, and other service components during deploymen of the release. The release is deployed into the live environment so that the integrity o hardware, software and other service components is maintained during deployment of th release. [Outcome 6]",
+            "CON.3.7 Reverse or remedy unsuccessful releases. Unsuccessfully deployed releases are reversed o remedied. [Outcome 7]",
+            "CON.3.8 Communicate release information to interested parties. Communicate release information t interested parties. [Outcome 8]"
+        ],
+        "inputs": [
+            "04-01 Acceptance test environment plan [Outcome 4]",
+            "04-07 Change schedule [Outcome 2]",
+            "12-06 Release acceptance test case [Outcome 4]",
+            "03-31 Release acceptance test criteria [Outcome 3,4]",
+            "02-29 Release log [Outcome 8]",
+            "04-16 Release plan [Outcome 3,5,6]",
+            "04-17 Release reversal arrangements plan [Outcome 7]",
+            "04-18 Release schedule [Outcome 8]",
+            "02-31 Release stakeholder communication list [Outcome 8]",
+            "04-20 Reversing unsuccessful changes plan [Outcome 6]"
+        ],
+        "outputs": [
+            "04-01 Acceptance test environment plan [Outcome 2]",
+            "08-02 Approval record [Outcome 4,5]",
+            "08-13 Communication record [Outcome 8]",
+            "12-06 Release acceptance test case [Outcome 3]",
+            "03-31 Release acceptance test criteria [Outcome 1]",
+            "09-27 Release acceptance test report [Outcome 4]",
+            "02-29 Release log [Outcome 5,6,7]",
+            "04-16 Release plan [Outcome 2]",
+            "04-17 Release reversal arrangements plan [Outcome 2]",
+            "04-18 Release schedule [Outcome 2]",
+            "04-19 Removal of services plan [Outcome 2]",
+            "04-20 Reversing unsuccessful changes plan [Outcome 2]",
+            "08-52 Review record [Outcome 4]"
+        ]
+    },
+    "Service design": {
+        "index": 6,
+        "process_id": "DTR.2",
+        "name": "Service design",
+        "purpose": "The purpose of the service design process is to design and develop new or changed services.",
+        "outcomes": [
+            "1. new or changed services are designed to meet agreed business needs and customer requirements;",
+            "2. a service specification is prepared that defines the attributes of the new or changed service;",
+            "3. infrastructure and service components to support the designed service are specified;",
+            "4. new or changed services are developed that satisfy the criteria identified in the service specification."
+        ],
+        "practices": [
+            "DTR.2.1 Design new or changed service. New or changed services are designed to meet agree business needs and customer requirements. [Outcome 1]",
+            "DTR.2.2 Prepare a service specification. A service specification is prepared that defines the attributes o the new or changed service. [Outcome 2]",
+            "DTR.2.3 Specify infrastructure and support components. Infrastructure and service components t support the designed service are specified. [Outcome 3]",
+            "DTR.2.4 Develop new or changed service. New or changed services are developed that satisfy th criteria identified in the service specification. [Outcome 4]"
+        ],
+        "inputs": [
+            "03-26 New or changed service design [Outcome 2,3]",
+            "04-15 New or changed service plan [Outcome 2,3]",
+            "12-04 New or changed service requirements [Outcome 1]",
+            "12-05 New or changed service specification [Outcome 4]",
+            "04-19 Removal of services plan [Outcome 2]",
+            "12-11 Service requirements [Outcome 1]"
+        ],
+        "outputs": [
+            "03-26 New or changed service design [Outcome 1]",
+            "07-02 New or changed service realisation [Outcome 4]",
+            "12-05 New or changed service specification [Outcome 2,3]"
+        ]
+    }
+}

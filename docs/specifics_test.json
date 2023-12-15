@@ -1,0 +1,50 @@
+{
+    "Change specific": {
+        "name": "Change specific",
+        "description": "The purpose of the change specific is to ensure all changes are assessed, approved implemented and reviewed in a controlled manner.",
+        "practices": {
+            "CON.1.1": 1,
+            "CON.1.2": 1,
+            "CON.1.3": 1,
+            "CON.1.4": 1,
+            "CON.1.5": 1,
+            "CON.1.6": 1,
+            "CON.1.7": 1
+        }
+    },
+    "Configuration specific": {
+        "name": "Configuration specific",
+        "description": "The purpose of the configuration management process is to establish and maintain the integrity of al identified service components.",
+        "practices": {
+            "CON.2.1": 1,
+            "CON.2.2": 1,
+            "CON.2.3": 1,
+            "CON.2.4": 1,
+            "CON.2.5": 1
+        }
+    },
+    "Release and deployment specific": {
+        "name": "Release and deployment specific",
+        "description": "The purpose of the release and deployment management process is to deploy releases into the liv environment in a controlled manner.",
+        "practices": {
+            "CON.3.1": 1,
+            "CON.3.2": 1,
+            "CON.3.3": 1,
+            "CON.3.4": 1,
+            "CON.3.5": 1,
+            "CON.3.6": 1,
+            "CON.3.7": 1,
+            "CON.3.8": 1
+        }
+    },
+    "Service design specific": {
+        "name": "Service design specific",
+        "description": "The purpose of the service design process is to design and develop new or changed services.",
+        "practices": {
+            "DTR.2.1": 1,
+            "DTR.2.2": 1,
+            "DTR.2.3": 1,
+            "DTR.2.4": 1
+        }
+    }
+}

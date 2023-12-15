@@ -1,0 +1,83 @@
+{% extends 'main/base.html' %}
+
+{% load django_bootstrap5 %}
+
+{% block content %}
+<div class="container">
+    <h1>Company Specifics List</h1>
+    <a href="{% url 'company' company.id %}">Back to Company</a>
+    <div class="row">
+        {% if company_specifics %}
+            {% for company_specific in company_specifics %}
+                <div class="col-sm-8 sm-4">
+                    <div class="card card-body">
+                        <p>
+                            <h5 class="card-title">{{ company_specific.specific.name }}
+                                <a class="btn btn-link" role="button" data-bs-toggle="collapse" href="#companySpecCollapse_{{ company_specific.specific.id }}" aria-bs-expanded="false" aria-bs-controls="companySpecCollapse_{{ company_specific.specific.id }}">
+                                    (show more)
+                                </a>
+                            </h5>
+                        </p>
+                        <div class="collapse" id="companySpecCollapse_{{ company_specific.specific.id }}">
+                            <div class="card card-body">
+                                <p class="card-text">{{ company_specific.specific.description }}</p>
+                                <p class="card-text">Score: 
+                                    {{ company_specific.score }}/5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h4>You don't have any company specifics yet.</h4>
+        {% endif %}
+    </div>
+</div>
+<br>
+<div class="container">
+    <h1>Exisitng Specifics List</h1>
+    {% if unassigned_specifics %}
+        <form method="POST">
+            {% csrf_token %}
+
+            {% for specific in unassigned_specifics %}
+                <div class="row">
+                    <div class="col-md-8 mb-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>
+                                    <h5 class="card-title">{{ specific.name }}
+                                        <a class="btn btn-link" role="button" data-bs-toggle="collapse" href="#descriptionCollapse_{{ specific.id }}" aria-bs-expanded="false" aria-bs-controls="descriptionCollapse_{{ specific.id }}">
+                                            (show more)
+                                        </a>
+                                    </h5>
+                                </p>
+                                <div class="collapse" id="descriptionCollapse_{{ specific.id }}">
+                                    <div class="card card-body">
+                                        <p class="card-text">{{ specific.description }}</p>
+                                        <p class="card-text">How relevant is this specific?
+                                            <select name="specific_{{ specific.id }}" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                                <option selected>None</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            {% bootstrap_button button_type="submit" content="Save Changes" %}
+            {% bootstrap_button button_type="reset" content="Cancel" %}
+        </form>
+    {% else %}
+        <h4>There is no other company specifics yet.</h4>
+    {% endif %}
+{% endblock %}
